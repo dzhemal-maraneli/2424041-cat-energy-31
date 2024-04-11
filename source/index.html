@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cat Enegry | Глафная страница</title>
+  <title>Cat Enegry | Главная страница</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
@@ -19,14 +19,14 @@
 
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item nav__item--curent">
-            <a class="nav--link" href="#">Главная</a>
+          <li class="nav__item">
+            <a class="nav__link nav__link--curent" href="#">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav--link" href="#">Каталог продукции</a>
+            <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav__item">
-            <a class="nav--link" href="#">Подбор программы</a>
+            <a class="nav__link" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -72,7 +72,7 @@
     </section>
     <section class="process">
       <div class="container">
-        <h2 class="process__title main--title">Как это работает</h2>
+        <h2 class="process__title main-title">Как это работает</h2>
         <ol class="process__list">
           <li class="process__item">
             <p class="process__text">
@@ -142,6 +142,7 @@
     </section>
 
     <section class="contact">
+      <h2 class="visually-hidden">Наш адрес.</h2>
       <div class="contact__content">
         <span class="contact__text main-text">
           приглашаем
@@ -158,6 +159,7 @@
           </p>
         </address>
       </div>
+      <div class="contact__map-wrapper"></div>
     </section>
   </main>
 
@@ -185,9 +187,8 @@
         </li>
       </ul>
 
-      <a class="footer__academy-logo" href="#">
+      <a class="footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="footer__academy-logo-text" src="#" alt="Словесный логотип сайта HTML-Academy.">
-        <img class="footer__academy-logo-img" src="#" alt="Графический логотип сайта HTML-Academy.">
       </a>
     </div>
   </footer>

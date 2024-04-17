@@ -13,8 +13,12 @@
   <header class="header">
     <div class="container">
       <a class="header__logo" href="#">
-        <img class="logo-img" src="#" width="33" height="38" alt="Графический логотип сайта Cat Enegry.">
-        <img class="logo-text" src="#" width="101" height="20" alt="Словесный логотип сайта Cat Enegry.">
+        <picture>
+          <img class="logo-img" src="images/logo/logo.svg" width="33" height="38"
+            alt="Графический логотип сайта Cat Enegry.">
+          <img class="logo-text" src="images/logo/logo-text.svg" width="101" height="20"
+            alt="Словесный логотип сайта Cat Enegry.">
+        </picture>
       </a>
 
       <nav class="nav">
@@ -46,7 +50,15 @@
           <p class="hero__text main-text">Занялся собой? Займись котом!</p>
           <a class="hero__link button" href="#">Подобрать программу</a>
         </div>
-        <img class="hero__img" src="#" width="522" height="499" alt="Изображение функционального питания для котов со вкусом курицы.">
+        <picture>
+          <source media="(min-width: 1440px)" width="522" height="499" type="image/png"
+            srcset="images/hero/hero-product-desktop@1x.png 1x, images/hero/hero-product-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png"
+            srcset="images/hero/hero-product-tablet@1x.png 1x, images/hero/hero-product-tablet@2x.png 2x">
+          <img class="hero__img" src="images/hero/hero-product-mobile@1x.png"
+            srcset="images/hero/hero-product-mobile@2x.png 2x" width="280" height="270"
+            alt="Изображение функционального питания для котов со вкусом курицы.">
+        </picture>
       </div>
     </section>
     <section class="programs">
@@ -136,8 +148,18 @@
           </div>
         </div>
         <div class="example__result">
-          <img class="example__result-img" src="#" width="560" height="512" alt="Результат до.">
-          <img class="example__result-img" src="#" width="560" height="512" alt="Результат после.">
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png"
+              srcset="images/slider/result-before-tablet-desktop@1x.png 1x, images/slider/result-before-tablet-desktop@2x.png 2x">
+            <img class="example__result-img" src="images/slider/result-before-mobile@1x.png"
+              srcset="images/slider/result-before-mobile@2x.png 2x" width="280" height="256" alt="Результат до.">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png"
+              srcset="images/slider/result-after-tablet-desktop@1x.png 1x, images/slider/result-after-tablet-desktop@2x.png 2x">
+            <img class="example__result-img" src="images/slider/result-after-mobile@1x.png"
+              srcset="images/slider/result-after-mobile@2x.png 2x" width="280" height="256" alt="Результат после.">
+          </picture>
           <button class="example__result-slider" type="button">
             <span class="visually-hidden">Слайдер результата до и после</span>
           </button>
@@ -170,7 +192,10 @@
   <footer class="footer">
     <div class="container">
       <a class="footer__logo" href="index.html">
-        <img class="logo-text" src="#" width="128" height="24" alt="Словесный логотип сайта Cat Enegry.">
+        <picture>
+          <img class="logo-text" src="images/logo/logo-footer.svg" width="128" height="24"
+            alt="Словесный логотип сайта Cat Enegry.">
+        </picture>
       </a>
 
       <ul class="social">
@@ -180,7 +205,8 @@
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="noreferrer noopener">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">Перейти на наш ютуб-канал.</span>
           </a>
         </li>
@@ -191,7 +217,8 @@
         </li>
       </ul>
 
-      <a class="footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener">
+      <a class="footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"
+        rel="noreferrer noopener">
         <span class="footer__academy-logo-text">
           HTML Academy
         </span>

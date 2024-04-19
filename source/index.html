@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <title>Cat Enegry | Главная страница</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -14,11 +21,15 @@
     <div class="container">
       <a class="header__logo" href="#">
         <picture>
-          <img class="logo-img" src="images/logo/logo.svg" width="33" height="38"
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
+            srcset="images/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
+            srcset="images/logo/logo-tablet.svg">
+          <img class="header__logo-img" src="images/logo/logo-mobile.svg" width="33" height="38"
             alt="Графический логотип сайта Cat Enegry.">
-          <img class="logo-text" src="images/logo/logo-text.svg" width="101" height="20"
-            alt="Словесный логотип сайта Cat Enegry.">
         </picture>
+        <img class="header__logo-text" src="images/logo/logo-text.svg" width="101" height="20"
+          alt="Словесный логотип сайта Cat Enegry.">
       </a>
 
       <nav class="nav">
@@ -192,10 +203,8 @@
   <footer class="footer">
     <div class="container">
       <a class="footer__logo" href="index.html">
-        <picture>
-          <img class="logo-text" src="images/logo/logo-footer.svg" width="128" height="24"
-            alt="Словесный логотип сайта Cat Enegry.">
-        </picture>
+        <img class="logo-text" src="images/logo/logo-footer.svg" width="128" height="24"
+          alt="Словесный логотип сайта Cat Enegry.">
       </a>
 
       <ul class="social">

@@ -1,0 +1,26 @@
+.programs__item {
+  background-color: $basic-grey-color;
+}
+
+.programs__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.programs__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}

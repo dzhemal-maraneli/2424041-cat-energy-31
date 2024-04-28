@@ -32,6 +32,10 @@
 }
 
 .hero__link {
+  display: block;
+  text-decoration: none;
+  color: $white-color;
+
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 26px;

@@ -1,7 +1,10 @@
 .button {
-  color: $white-color;
+  border: none;
+  cursor: pointer;
+
   font-size: 16px;
   line-height: 20px;
+  color: $white-color;
   background-color: $basic-green-color;
   padding: 10px;
   text-align: center;

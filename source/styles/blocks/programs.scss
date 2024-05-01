@@ -1,8 +1,65 @@
+.programs {
+  padding: 20px 0;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .programs__item {
+  padding: 30px 20px 18px;
   background-color: $basic-grey-color;
+  position: relative;
+
+  &--weight-loss::before,
+  &--weight-gain::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    background-color: $basic-green-color;
+    border-radius: 50%;
+  }
+
+  &--weight-loss::after {
+    content: "";
+    width: 36px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 27px;
+    background-image: url("../../icons/stack.svg#weight-loss-icon");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--weight-gain::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    top: 35px;
+    left: 12px;
+    background-image: url("../../icons/stack.svg#weight-gain-icon");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .programs__title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 70px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -14,15 +71,52 @@
   }
 }
 
+.programs__text {
+  margin: 0;
+  padding-bottom: 38px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    background-color: $border-color;
+  }
+}
+
 .programs__link {
   text-decoration: none;
   color: $dark-color;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 12px;
+    background-image: url("../../icons/stack.svg#arrow-icon");
+    background-repeat: no-repeat;
+    background-position: -8px;
+    background-size: cover;
+    transition: background-position 0.3s;
+  }
+
+  &:hover {
+    &::after {
+      background-position: 0;
+    }
+  }
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 25px;
   }
 }
+

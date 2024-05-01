@@ -1,5 +1,5 @@
 .example {
-  background: linear-gradient(to top, $special-grey-third-color 100%, $white-color 0%);
+  background: $special-grey-third-color;
 
   @media (min-width: 768px) {
     background: linear-gradient(to top, $special-grey-third-color 42%, $white-color 42%);
@@ -39,5 +39,35 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.example__result {
+  position: relative;
+}
+
+.example__result-slider {
+  border: 2px solid $icons-color;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: $white-color;
+
+  &::before {
+    content: "";
+    width: 4px;
+    height: 256px;
+    position: absolute;
+    background-color: $icons-color;
+    border-radius: 2px;
   }
 }

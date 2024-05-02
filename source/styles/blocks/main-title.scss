@@ -5,7 +5,7 @@
   color: $dark-color;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }

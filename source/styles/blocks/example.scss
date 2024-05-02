@@ -1,11 +1,11 @@
 .example {
   background: $special-grey-third-color;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background: linear-gradient(to top, $special-grey-third-color 42%, $white-color 42%);
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     background: linear-gradient(to top, $special-grey-third-color 77%, $white-color 77%);
   }
 }
@@ -14,7 +14,7 @@
   font-size: 24px;
   line-height: 24px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
   }
@@ -24,7 +24,7 @@
   font-size: 12px;
   line-height: 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
   }
@@ -36,7 +36,7 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -44,6 +44,7 @@
 
 .example__result {
   position: relative;
+  z-index: 1;
 }
 
 .example__result-slider {
@@ -69,5 +70,6 @@
     position: absolute;
     background-color: $icons-color;
     border-radius: 2px;
+    z-index: -1;
   }
 }

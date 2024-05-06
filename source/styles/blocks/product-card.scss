@@ -22,9 +22,9 @@
 .product-card__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $grey-text-second-color;
   text-transform: uppercase;
-  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

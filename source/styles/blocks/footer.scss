@@ -14,10 +14,10 @@
 }
 
 .footer__academy-logo {
-  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 
   &::after {
     content: "";

@@ -1,9 +1,9 @@
 .main-title {
+  position: relative;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: $dark-color;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

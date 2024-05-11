@@ -1,12 +1,12 @@
 .contact__content {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
   padding: 26px 20px;
   background-color: $white-color;
 }
 
 .contact__title {
+  width: 140px;
   margin: 0;
   font-size: 16px;
   line-height: 20px;
@@ -19,10 +19,15 @@
   }
 }
 
+.contact__address {
+  width: 140px;
+}
+
 .contact__street,
 .contact__city {
   margin: 0;
   line-height: 20px;
+  font-style: italic;
 }
 
 .contact__map-wrapper {

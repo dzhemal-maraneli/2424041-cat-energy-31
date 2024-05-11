@@ -1,3 +1,19 @@
+.header {
+  position: relative;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px 15px;
+}
+
 .header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+  min-width: 190px;
   text-decoration: none;
 }

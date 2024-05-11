@@ -18,7 +18,7 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="container">
+    <div class="header__container container">
       <a class="header__logo" href="#">
         <picture>
           <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
@@ -32,7 +32,7 @@
           alt="Словесный логотип сайта Cat Enegry.">
       </a>
 
-      <nav class="nav">
+      <nav class="nav nav--opened">
         <button class="nav__burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <span class="nav__burger-line"></span>
@@ -54,23 +54,21 @@
 
   <main class="main-page">
     <section class="hero">
-      <div class="container">
-        <h1 class="visually-hidden">Сайт по продаже функционального питания для котов.</h1>
-        <div class="hero__content">
-          <h2 class="hero__title main-title">Функциональное питание для котов</h2>
-          <p class="hero__text">Занялся собой? Займись котом!</p>
-          <a class="hero__link button" href="#">Подобрать программу</a>
-        </div>
-        <picture>
-          <source media="(min-width: 1440px)" width="522" height="499" type="image/png"
-            srcset="images/hero/hero-product-desktop@1x.png 1x, images/hero/hero-product-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="709" height="609" type="image/png"
-            srcset="images/hero/hero-product-tablet@1x.png 1x, images/hero/hero-product-tablet@2x.png 2x">
-          <img class="hero__img" src="images/hero/hero-product-mobile@1x.png"
-            srcset="images/hero/hero-product-mobile@2x.png 2x" width="280" height="270"
-            alt="Изображение функционального питания для котов со вкусом курицы.">
-        </picture>
+      <h1 class="visually-hidden">Сайт по продаже функционального питания для котов.</h1>
+      <div class="hero__content">
+        <h2 class="hero__title main-title">Функциональное питание для котов</h2>
+        <p class="hero__text">Занялся собой? Займись котом!</p>
+        <a class="hero__link button" href="#">Подобрать программу</a>
       </div>
+      <picture>
+        <source media="(min-width: 1440px)" width="522" height="499" type="image/png"
+          srcset="images/hero/hero-product-desktop@1x.png 1x, images/hero/hero-product-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png"
+          srcset="images/hero/hero-product-tablet@1x.png 1x, images/hero/hero-product-tablet@2x.png 2x">
+        <img class="hero__img" src="images/hero/hero-product-mobile@1x.png"
+          srcset="images/hero/hero-product-mobile@2x.png 2x" width="280" height="270"
+          alt="Изображение функционального питания для котов со вкусом курицы.">
+      </picture>
     </section>
 
     <section class="programs">
@@ -151,7 +149,7 @@
               <span class="example__stat-text main-text">снижение веса</span>
             </li>
             <li class="example__stat-item">
-              <span class="example__stat-count">16 дней</span>
+              <span class="example__stat-count">60 дней</span>
               <span class="example__stat-text main-text">затрачено времени</span>
             </li>
           </ul>
@@ -214,18 +212,20 @@
 
       <ul class="social">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" rel="noreferrer noopener">
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">Перейти в нашу группу во вконтакте.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
-            rel="noreferrer noopener">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+            target="_blank" rel="noreferrer noopener">
             <span class="visually-hidden">Перейти на наш ютуб-канал.</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="noreferrer noopener">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank"
+            rel="noreferrer noopener">
             <span class="visually-hidden">Перейти в наш телеграмм.</span>
           </a>
         </li>

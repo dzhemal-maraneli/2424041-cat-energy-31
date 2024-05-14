@@ -56,7 +56,7 @@
     <section class="hero">
       <h1 class="visually-hidden">Сайт по продаже функционального питания для котов.</h1>
       <div class="hero__content">
-        <h2 class="hero__title main-title">Функциональное питание для котов</h2>
+        <h2 class="hero__title main-title">Функциональное <br> питание для котов</h2>
         <p class="hero__text">Занялся собой? Займись котом!</p>
         <a class="hero__link button" href="#">Подобрать программу</a>
       </div>
@@ -126,7 +126,7 @@
             <p class="process__text main-text">
               Уже через месяц наслаждайтесь
               изменениями к лучшему
-              вашего питомца!
+              вашего&nbsp;питомца!
             </p>
           </li>
         </ul>
@@ -158,18 +158,12 @@
             <span class="example__cost-price">15 000 руб.</span>
           </div>
         </div>
-        <div class="example__result">
+        <div class="example__result" style="--curtain-place: 0.5;">
           <picture>
             <source media="(min-width: 768px)" width="560" height="512" type="image/png"
               srcset="images/slider/result-before-tablet-desktop@1x.png 1x, images/slider/result-before-tablet-desktop@2x.png 2x">
-            <img class="example__result-img" src="images/slider/result-before-mobile@1x.png"
+            <img class="example__result-img example__result-img--before" src="images/slider/result-before-mobile@1x.png"
               srcset="images/slider/result-before-mobile@2x.png 2x" width="280" height="256" alt="Результат до.">
-          </picture>
-          <picture>
-            <source media="(min-width: 768px)" width="560" height="512" type="image/png"
-              srcset="images/slider/result-after-tablet-desktop@1x.png 1x, images/slider/result-after-tablet-desktop@2x.png 2x">
-            <img class="example__result-img" src="images/slider/result-after-mobile@1x.png"
-              srcset="images/slider/result-after-mobile@2x.png 2x" width="280" height="256" alt="Результат после.">
           </picture>
           <button class="example__result-slider" type="button">
             <span class="visually-hidden">Слайдер результата до и после</span>
@@ -177,6 +171,12 @@
               <use href="../../icons/stack.svg#slider-icon"></use>
             </svg>
           </button>
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png"
+              srcset="images/slider/result-after-tablet-desktop@1x.png 1x, images/slider/result-after-tablet-desktop@2x.png 2x">
+            <img class="example__result-img example__result-img--after" src="images/slider/result-after-mobile@1x.png"
+              srcset="images/slider/result-after-mobile@2x.png 2x" width="280" height="256" alt="Результат после.">
+          </picture>
         </div>
       </div>
     </section>
@@ -185,8 +185,8 @@
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contact__content">
         <h3 class="contact__title">
-          Приглашаем <br>
-          к сотрудничеству
+          Приглашаем
+          к&nbsp;сотрудничеству
           дилеров!
         </h3>
         <address class="contact__address">

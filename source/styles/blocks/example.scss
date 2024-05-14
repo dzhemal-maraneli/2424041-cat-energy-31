@@ -3,6 +3,7 @@
   background: $special-grey-third-color;
 
   @media (min-width: $tablet-width) {
+    padding-top: 45px;
     background: linear-gradient(to top, $special-grey-third-color 42%, $white-color 42%);
   }
 
@@ -14,6 +15,10 @@
 .example__title {
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
@@ -88,9 +93,28 @@
   text-align: center;
 }
 
+/* stylelint-disable no-unknown-custom-properties */
 .example__result {
   position: relative;
   z-index: 1;
+  overflow: hidden;
+  // display: grid;
+  // grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+}
+/* stylelint-enable */
+
+.example__result-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &--before {
+    object-position: left;
+  }
+
+  &--after {
+    object-position: right;
+  }
 }
 
 .example__result-slider {

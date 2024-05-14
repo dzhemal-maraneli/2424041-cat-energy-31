@@ -29,70 +29,52 @@
   padding: 30px 20px 18px;
   background-color: $basic-grey-color;
 
-  &--weight-loss::before,
-  &--weight-gain::before {
+  &--weight-loss::before {
     content: "";
     position: absolute;
-    top: 24px;
+    top: 21px;
     left: 20px;
     width: 50px;
-    height: 50px;
-    background-color: $basic-green-color;
-    border-radius: 50%;
-
-    @media (min-width: $tablet-width) {
-      top: 92px;
-      left: auto;
-      right: 63px;
-      width: 200px;
-      height: 200px;
-    }
-  }
-
-  &--weight-loss::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 27px;
-    width: 36px;
-    height: 50px;
+    height: 53px;
     background-image: url("../../icons/stack.svg#weight-loss-icon");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      top: 81px;
+      top: 50%;
       left: auto;
-      right: 92px;
-      width: 140px;
-      height: 194px;
+      right: 63px;
+      transform: translateY(-50%);
+      width: 200px;
+      height: 211px;
     }
   }
 
-  &--weight-gain::after {
+  &--weight-gain::before {
     content: "";
     position: absolute;
-    top: 35px;
+    top: 24px;
     left: 12px;
     width: 67px;
-    height: 28px;
+    height: 50px;
     background-image: url("../../icons/stack.svg#weight-gain-icon");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      top: 135px;
+      top: 52%;
       left: auto;
       right: 28px;
+      transform: translateY(-50%);
       width: 268px;
-      height: 112px;
+      height: 200px;
     }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 327px 53px 52px;
+    padding: 77px 315px 54px 52px;
   }
 }
 
@@ -138,18 +120,22 @@
 }
 
 .programs__link {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 4px 0;
+  position: relative;
+  display: inline-block;
+  padding: 4px 57px 4px 0;
   font-size: 16px;
   line-height: 16px;
   color: $dark-color;
   text-decoration: none;
   text-transform: uppercase;
 
+
   &::after {
     content: "";
+    position: absolute;
+    top: 15px;
+    left: calc(100% - 30px);
+    transform: translateY(-50%);
     width: 32px;
     height: 12px;
     background-image: url("../../icons/stack.svg#arrow-icon");

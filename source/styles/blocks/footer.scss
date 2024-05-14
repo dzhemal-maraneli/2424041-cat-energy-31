@@ -6,7 +6,13 @@
 .footer__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -19,6 +25,8 @@
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  width: 100%;
+  max-width: 320px;
 
   &::after {
     content: "";
@@ -28,6 +36,11 @@
     mask-repeat: no-repeat;
     mask-size: cover;
     background-color: $icons-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+    width: auto;
   }
 }
 

@@ -13,8 +13,13 @@
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
+    padding: 20px 0 20px 34px;
     width: auto;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 0 7px 34px;
   }
 }
 

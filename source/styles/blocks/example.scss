@@ -1,5 +1,5 @@
 .example {
-  padding-top: 25px;
+  padding: 25px 0 40px;
   background: $special-grey-third-color;
 
   @media (min-width: $tablet-width) {
@@ -8,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     background: linear-gradient(to top, $special-grey-third-color 77%, $white-color 77%);
   }
 }
@@ -21,9 +22,17 @@
   }
 }
 
+.example__content {
+  margin-bottom: 20px;
+}
+
 .example__text {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .example__stat-list {
@@ -32,7 +41,7 @@
   align-items: center;
   gap: 32px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   padding: 0;
   list-style: none;
 }
@@ -93,15 +102,19 @@
   text-align: center;
 }
 
-/* stylelint-disable no-unknown-custom-properties */
 .example__result {
+  --curtain-place: 0.5;
   position: relative;
-  z-index: 1;
-  overflow: hidden;
-  // display: grid;
-  // grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+  display: grid;
+  grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
+  width: min(100%, 560px);
+  aspect-ratio: 280/256;
+
+  picture,
+  source {
+    display: contents;
+  }
 }
-/* stylelint-enable */
 
 .example__result-img {
   display: block;
@@ -117,16 +130,16 @@
   }
 }
 
-.example__result-slider {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.example__result-divider {
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: -20px;
+  padding: 0;
   width: 40px;
   height: 40px;
-  padding: 0;
+  z-index: 1;
   border: 2px solid $icons-color;
   cursor: pointer;
   border-radius: 50%;
@@ -137,7 +150,7 @@
     position: absolute;
     z-index: -1;
     width: 4px;
-    height: 256px;
+    height: 100%;
     background-color: $icons-color;
     border-radius: 2px;
   }

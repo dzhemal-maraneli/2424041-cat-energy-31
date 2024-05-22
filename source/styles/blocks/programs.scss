@@ -5,6 +5,11 @@
     padding-top: 0;
     padding-bottom: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 82px;
+    padding-bottom: 71px;
+  }
 }
 
 .programs__list {
@@ -20,7 +25,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 80px;
   }
 }
 
@@ -28,6 +34,15 @@
   position: relative;
   padding: 30px 20px 18px;
   background-color: $basic-grey-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 315px 54px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+    padding: 77px 52px 55px;
+  }
 
   &--weight-loss::before {
     content: "";
@@ -48,6 +63,14 @@
       transform: translateY(-50%);
       width: 200px;
       height: 211px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      left: 52px;
+      transform: none;
+      width: 100px;
+      height: 106px;
     }
   }
 
@@ -71,10 +94,14 @@
       width: 268px;
       height: 200px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    padding: 77px 315px 54px 52px;
+    @media (min-width: $desktop-width) {
+      top: 47px;
+      left: 33px;
+      transform: none;
+      width: 134px;
+      height: 100px;
+    }
   }
 }
 
@@ -93,12 +120,25 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
 }
 
 .programs__text {
   position: relative;
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 27px;
+  }
 
   &::before {
     content: "";
@@ -113,29 +153,32 @@
       display: none;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 52px;
-  }
 }
 
 .programs__link {
   position: relative;
   display: inline-block;
-  padding: 4px 57px 4px 0;
+  padding: 4px 47px 4px 0;
   font-size: 16px;
   line-height: 16px;
   color: $dark-color;
   text-decoration: none;
   text-transform: uppercase;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //
+  }
 
   &::after {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 25%;
     left: calc(100% - 30px);
-    transform: translateY(-50%);
     width: 32px;
     height: 12px;
     background-image: url("../../icons/stack.svg#arrow-icon");
@@ -143,17 +186,15 @@
     background-position: -8px;
     background-size: cover;
     transition: background-position 0.3s;
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% - 20px);
+    }
   }
 
   &:hover {
     &::after {
       background-position: 0;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    gap: 25px;
-    font-size: 20px;
-    line-height: 25px;
   }
 }

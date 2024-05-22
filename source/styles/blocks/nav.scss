@@ -66,12 +66,24 @@
     width: auto;
     padding-right: 4px;
   }
+
+  &--has-background {
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+      color: $white-color;
+    }
+  }
 }
 
 .nav__item {
   padding: 22px 15px;
   text-align: center;
   border-top: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
 
   &:last-child {
     border-bottom: 1px solid $border-color;
@@ -80,18 +92,13 @@
       border: none;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    border: none;
-  }
 }
 
 .nav__link {
   position: relative;
   font-size: 20px;
   line-height: 20px;
-  color: $dark-color;
+  color: inherit;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -115,6 +122,9 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-    color: $white-color;
+
+    &--curent::before {
+      background-color: $white-color;
+    }
   }
 }

@@ -1,6 +1,10 @@
 .footer {
   padding: 40px 0;
   background-color: $basic-grey-color;
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 0;
+  }
 }
 
 .footer__container {

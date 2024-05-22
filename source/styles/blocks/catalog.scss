@@ -2,11 +2,11 @@
   padding: 27px 0 23px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0 74px;
+    padding: 65px 0 74px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 0 70px;
+    padding: 75px 0 70px;
   }
 }
 
@@ -46,7 +46,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 80px;
+    gap: 63px 80px;
   }
 }
 

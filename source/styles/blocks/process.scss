@@ -2,11 +2,13 @@
   padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 45px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid $basic-grey-color;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 69px;
+    border-bottom: none;
   }
 }
 

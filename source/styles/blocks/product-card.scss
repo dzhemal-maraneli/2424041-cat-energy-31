@@ -4,9 +4,8 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content min-content 17px min-content;
+  grid-template-rows: min-content min-content 18px min-content;
   padding: 20px 20px 25px;
-  border-top: 1px solid $basic-grey-color;
 
   @media (min-width: $tablet-width) {
     --pseudo-margin: 50px;
@@ -15,16 +14,10 @@
     grid-template-rows: max-content min-content 1fr min-content;
     padding: 12px 37px 40px;
     background: linear-gradient(to top, $basic-grey-color calc(100% - 81px), $white-color calc(100% - 81px));
-    border: none;
   }
 
   @media (min-width: $desktop-width) {
     --pseudo-margin: 38px;
-    border: none;
-  }
-
-  &:last-child {
-    border-bottom: 1px solid $basic-grey-color;
   }
 
   &--show-more {
@@ -183,21 +176,21 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 4px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 1px;
+      background-color: $special-grey-first-color;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 7px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 1px;
-    background-color: $special-grey-first-color;
   }
 }
 

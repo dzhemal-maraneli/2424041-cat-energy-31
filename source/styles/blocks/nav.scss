@@ -62,15 +62,27 @@
     position: static;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 33px;
     width: auto;
+    max-width: 475px;
     padding-right: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 520px;
   }
 
   &--has-background {
     @media (min-width: $desktop-width) {
       background-color: transparent;
       color: $white-color;
+    }
+  }
+
+  &--has-background .nav__link--curent::before {
+    @media (min-width: $desktop-width) {
+      background-color: $white-color;
     }
   }
 }
@@ -122,9 +134,5 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 20px;
-
-    &--curent::before {
-      background-color: $white-color;
-    }
   }
 }

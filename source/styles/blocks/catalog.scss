@@ -51,6 +51,20 @@
 }
 
 .catalog__item {
+  border-top: 1px solid $basic-grey-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $basic-grey-color;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
   &--show-more {
     @media (min-width: $tablet-width) {
       display: flex;
